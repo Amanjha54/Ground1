@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --obsidian-base: #08080a;
+  --obsidian-card: #0f1015;
+  --obsidian-card-hover: #15171e;
+  --obsidian-border: #232632;
+  --obsidian-border-subtle: #181a24;
+  
+  --gold-primary: #d4af37;
+  --gold-glow: rgba(212, 175, 55, 0.25);
+  --gold-subtle: #9c8025;
+  --gold-text: #f3e5ab;
+
+  --emerald-verify: #10b981;
+  --emerald-glow: rgba(16, 185, 129, 0.25);
+  
+  --platinum-text: #e2e8f0;
+  --platinum-muted: #94a3b8;
+  
+  --amber-warn: #f59e0b;
+  --crimson-risk: #ef4444;
+
+  --background: var(--obsidian-base);
+  --foreground: var(--platinum-text);
+}
+
+body {
+  background-color: var(--obsidian-base);
+  color: var(--platinum-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  selection-background-color: var(--gold-primary);
+  selection-color: var(--obsidian-base);
+}
+
+/* Glassmorphism Surface Utility */
+.glass-obsidian {
+  background: rgba(15, 16, 21, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--obsidian-border);
+}
+
+.glass-obsidian-subtle {
+  background: rgba(15, 16, 21, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--obsidian-border-subtle);
+}
+
+/* Gold Gradient Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fdf4d3 0%, #d4af37 60%, #aa8524 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(135deg, #d4af37, #232632) 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--obsidian-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--obsidian-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-subtle);
+}
