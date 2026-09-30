@@ -1,0 +1,94 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+package-lock.json.backup
+
+# Python / Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment and Secret Files (NEVER COMMIT)
+.env
+.env*.local
+.env.development
+.env.test
+.env.production
+.env.staging
+*.env
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+*.jks
+id_rsa
+id_rsa.pub
+camera_secrets.json
+service_account.json
+supabase_secret_key*
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Next.js / Build Outputs
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Large Model Weights & Embeddings Cache
+models/*.pt
+models/*.pth
+models/*.bin
+models/*.onnx
+models/weights/
+cache/
+.cache/
+torch_cache/
+huggingface_cache/
+
+# Video & Media Gateway temporary records
+recordings/
+streams/
+hls/
+temp_frames/
+
+# IDE & OS Files
+.DS_Store
+*.pem
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Supabase Local
+.supabase/
+supabase/.temp/
